@@ -1,0 +1,173 @@
+{% extends "base.html" %}
+{% block content %}
+</div>
+        </div>
+</nav>
+<h1>Фильтр программ</h1>
+<form action="" method="post">
+    {{ form.hidden_tag() }}
+  <p>
+        {{ form.university.label }}<br>
+        {{ form.university(class="form-control") }}<br>
+        {% for error in form.university.errors %}
+            <p content="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+   {% endfor %}
+  <p>
+        {{ form.russian.label }}<br>
+        {{ form.russian(class="form-control") }}<br>
+        {% for error in form.russian.errors %}
+            <p content="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+  {% endfor %}
+  <p>
+        {{ form.math_basic.label }}<br>
+        {{ form.math_basic(class="form-control") }}<br>
+        {% for error in form.math_basic.errors %}
+            <p content="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+  {% endfor %}
+  <p>
+        {{ form.math_advanced.label }}<br>
+        {{ form.math_advanced(class="form-control") }}<br>
+        {% for error in form.math_advanced.errors %}
+            <p content="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+  {% endfor %}
+  <p>
+        {{ form.informatics.label }}<br>
+        {{ form.informatics(class="form-control") }}<br>
+        {% for error in form.informatics.errors %}
+            <p content="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+  {% endfor %}
+  <p>
+        {{ form.physics.label }}<br>
+        {{ form.physics(class="form-control") }}<br>
+        {% for error in form.physics.errors %}
+            <p content="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+  {% endfor %}
+  <p>
+        {{ form.chemistry.label }}<br>
+        {{ form.chemistry(class="form-control") }}<br>
+        {% for error in form.chemistry.errors %}
+            <p content="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+  {% endfor %}
+  <p>
+        {{ form.biology.label }}<br>
+        {{ form.biology(class="form-control") }}<br>
+        {% for error in form.biology.errors %}
+            <p content="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+  {% endfor %}
+  <p>
+        {{ form.history.label }}<br>
+        {{ form.history(class="form-control") }}<br>
+        {% for error in form.history.errors %}
+            <p content="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+  {% endfor %}
+  <p>
+        {{ form.social_science.label }}<br>
+        {{ form.social_science(class="form-control") }}<br>
+        {% for error in form.social_science.errors %}
+            <p content="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+  {% endfor %}
+  <p>
+        {{ form.geography.label }}<br>
+        {{ form.geography(class="form-control") }}<br>
+        {% for error in form.geography.errors %}
+            <p content="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+  {% endfor %}
+  <p>
+        {{ form.literature.label }}<br>
+        {{ form.literature(class="form-control") }}<br>
+        {% for error in form.literature.errors %}
+            <p content="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+  {% endfor %}
+  <p>
+        {{ form.english.label }}<br>
+        {{ form.english(class="form-control") }}<br>
+        {% for error in form.english.errors %}
+            <p content="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+  {% endfor %}
+  <p>
+        {{ form.french.label }}<br>
+        {{ form.math_basic(class="form-control") }}<br>
+        {% for error in form.french.errors %}
+            <p content="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+  {% endfor %}
+  <p>
+        {{ form.german.label }}<br>
+        {{ form.german(class="form-control") }}<br>
+        {% for error in form.german.errors %}
+            <p content="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+  {% endfor %}
+    <p>
+        {{ form.chinese.label }}<br>
+        {{ form.chinese(class="form-control") }}<br>
+        {% for error in form.chinese.errors %}
+            <p content="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+  {% endfor %}
+    <p>
+        {{ form.spanish.label }}<br>
+        {{ form.spanish(class="form-control") }}<br>
+        {% for error in form.spanish.errors %}
+            <p content="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+  {% endfor %}
+  <p>
+        {{ form.price.label }}<br>
+        {{ form.price(class="form-control") }}<br>
+        {% for error in form.price.errors %}
+            <p content="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+  {% endfor %}
+  <p>
+        {{ form.region.label }}<br>
+        {{ form.region(class="form-control") }}<br>
+        {% for error in form.region.errors %}
+            <p content="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+  {% endfor %}
+  <p>
+        {{ form.city.label }}<br>
+        {{ form.city(class="form-control") }}<br>
+        {% for error in form.city.errors %}
+            <p content="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+  {% endfor %}
+    <p>{{ form.submit(type="submit", class="btn btn-primary") }}</p>
+    {{message}}
+</form>
+
+{% endblock %}
